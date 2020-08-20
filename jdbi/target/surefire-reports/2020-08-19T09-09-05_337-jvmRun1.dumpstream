@@ -1,0 +1,84 @@
+# Created at 2020-08-19T09:10:39.113
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2020-08-19T09:10:39.124
+Unexpected IOException with stream: <failure>
+
+# Created at 2020-08-19T09:10:39.124
+Unexpected IOException with stream: 
+
+
+# Created at 2020-08-19T09:10:39.125
+Unexpected IOException with stream: 
+
+
+# Created at 2020-08-19T09:10:39.126
+Unexpected IOException with stream: org.jdbi.v3.core.transaction.TransactionException: Failed to test for transaction status
+	at org.jdbi.v3.core.transaction.LocalTransactionHandler.isInTransaction(LocalTransactionHandler.java:120)
+	at org.jdbi.v3.core.Handle.<init>(Handle.java:79)
+	at org.jdbi.v3.core.Jdbi.open(Jdbi.java:311)
+	at org.jdbi.v3.core.LazyHandleSupplier.initHandle(LazyHandleSupplier.java:65)
+	at org.jdbi.v3.core.LazyHandleSupplier.getHandle(LazyHandleSupplier.java:53)
+	at org.jdbi.v3.sqlobject.statement.internal.CustomizingStatementHandler.invoke(CustomizingStatementHandler.java:146)
+	at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.invoke(SqlQueryHandler.java:26)
+	at org.jdbi.v3.sqlobject.internal.SqlObjectInitData$1$1.lambda$invoke$0(SqlObjectInitData.java:135)
+	at org.jdbi.v3.core.internal.Invocations.invokeWith(Invocations.java:44)
+	at org.jdbi.v3.core.internal.Invocations.invokeWith(Invocations.java:26)
+	at org.jdbi.v3.core.LazyHandleSupplier.lambda$invokeInContext$1(LazyHandleSupplier.java:77)
+	at org.jdbi.v3.core.internal.Invocations.invokeWith(Invocations.java:44)
+	at org.jdbi.v3.core.internal.Invocations.invokeWith(Invocations.java:26)
+	at org.jdbi.v3.core.LazyHandleSupplier.invokeInContext(LazyHandleSupplier.java:76)
+	at org.jdbi.v3.sqlobject.internal.SqlObjectInitData$1$1.call(SqlObjectInitData.java:141)
+	at org.jdbi.v3.sqlobject.internal.SqlObjectInitData$1$1.invoke(SqlObjectInitData.java:135)
+	at org.jdbi.v3.sqlobject.SqlObjectFactory.lambda$attach$2(SqlObjectFactory.java:110)
+	at org.jdbi.v3.core.internal.OnDemandExtensions.lambda$invoke$5(OnDemandExtensions.java:98)
+	at org.jdbi.v3.core.internal.exceptions.Unchecked.lambda$function$4(Unchecked.java:76)
+	at org.jdbi.v3.core.internal.OnDemandExtensions.invoke(OnDemandExtensions.java:98)
+	at org.jdbi.v3.core.internal.OnDemandExtensions.lambda$null$2(OnDemandExtensions.java:82)
+	at org.jdbi.v3.core.Jdbi.callWithExtension(Jdbi.java:475)
+	at org.jdbi.v3.core.Jdbi.withExtension(Jdbi.java:462)
+	at org.jdbi.v3.core.internal.OnDemandExtensions.lambda$createProxy$3(OnDemandExtensions.java:82)
+	at com.sun.proxy.$Proxy64.findById(Unknown Source)
+	at com.example.demo.DemoApplicationsTests.findById(DemoApplicationsTests.java:101)
+	at com.example.demo.generated.DemoApplicationsTests_findById_jmhTest.findById_avgt_jmhStub(DemoApplicationsTests_findById_jmhTest.java:407)
+	at com.example.demo.generated.DemoApplicationsTests_findById_jmhTest.findById_AverageTime(DemoApplicationsTests_findById_jmhTest.java:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy$TransactionAwareInvocationHandler.invoke(TransactionAwareDataSourceProxy.java:225)
+	at com.sun.proxy.$Proxy79.getAutoCommit(Unknown Source)
+	at org.jdbi.v3.core.transaction.LocalTransactionHandler.isInTransaction(LocalTransactionHandler.java:118)
+	... 39 more
+
+
+# Created at 2020-08-19T09:10:39.127
+Unexpected IOException with stream: 2020-08-19 09:10:39.126  INFO 5999 --- [       Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+
+# Created at 2020-08-19T09:10:39.127
+Unexpected IOException with stream: 
+
+
+# Created at 2020-08-19T09:10:39.127
+Unexpected IOException with stream: 
+
+

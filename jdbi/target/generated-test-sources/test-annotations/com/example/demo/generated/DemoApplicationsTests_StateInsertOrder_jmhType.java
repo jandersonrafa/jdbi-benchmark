@@ -1,0 +1,4 @@
+package com.example.demo.generated;
+public class DemoApplicationsTests_StateInsertOrder_jmhType extends DemoApplicationsTests_StateInsertOrder_jmhType_B3 {
+}
+

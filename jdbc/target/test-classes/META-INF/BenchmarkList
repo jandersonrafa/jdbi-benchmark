@@ -1,0 +1,4 @@
+JMH S 38 com.example.demo.DemoApplicationsTests S 67 com.example.demo.generated.DemoApplicationsTests_deleteById_jmhTest S 10 deleteById S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 38 com.example.demo.DemoApplicationsTests S 63 com.example.demo.generated.DemoApplicationsTests_insert_jmhTest S 6 insert S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 38 com.example.demo.DemoApplicationsTests S 63 com.example.demo.generated.DemoApplicationsTests_update_jmhTest S 6 update S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 38 com.example.demo.DemoApplicationsTests S 65 com.example.demo.generated.DemoApplicationsTests_findById_jmhTest S 8 findById S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 

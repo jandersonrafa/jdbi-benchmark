@@ -1,0 +1,15 @@
+# Created at 2020-08-19T09:00:52.493
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2020-08-19T09:00:52.493
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/home/janderson/.m2/repository/org/openjdk/jmh/jmh-core/1.22/jmh-core-1.22.jar) to field java.io.PrintStream.charOut
+
+# Created at 2020-08-19T09:00:52.494
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+
+# Created at 2020-08-19T09:00:52.494
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2020-08-19T09:00:52.494
+WARNING: All illegal access operations will be denied in a future release
+
